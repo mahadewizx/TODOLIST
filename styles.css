@@ -1,0 +1,138 @@
+/* Mengatur gaya dasar halaman */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #a2c2e2, #da5eab); /* Latar belakang gradient pastel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Mengatur gaya header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #4a90e2; /* Warna pastel biru */
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Mengatur gaya form tugas */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #4a90e2; /* Warna pastel biru */
+    box-shadow: 0 0 8px rgba(74,144,226,0.3);
+    outline: none;
+}
+
+#addTaskButton {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4a90e2; /* Warna pastel biru */
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#addTaskButton:hover {
+    background-color: #357ABD; /* Warna biru lebih gelap saat hover */
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+li.completed {
+    background: #83cdf8; /* Warna pastel hijau */
+    text-decoration: line-through;
+}
+
+li:hover {
+    background: #e0f7fa; /* Warna pastel biru muda saat hover */
+    transform: scale(1.02);
+}
+
+li span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+button.remove-button {
+    background-color: #f57acc; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.remove-button:hover {
+    background-color: #6abcf7; /* Warna merah lebih gelap saat hover */
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+    .completed {
+    text-decoration: line-through;
+    color: grey;
+
+
+}
